@@ -131,6 +131,7 @@ while True:
     except:
         cv.imshow("face detection", test0)
         cv.waitKey(1)
+        #end
 
 
 
