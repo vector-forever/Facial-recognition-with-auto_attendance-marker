@@ -12,10 +12,10 @@ import mysql.connector
 def sample_faces():   #Defining a function to loop through every student(actor) names
     global people, test_images, labels   #making it global so we can use it outside function
     people = []
-    for name in os.listdir(r"C:\Users\vector forever\facial recogonition\project\photos"):
+    for name in os.listdir(r"C:\Users\vector forever\PROJECTS\Facial recognition\photos"):
        people.append(name)    #making a people list of actors names
 
-    DIR = r"C:\Users\vector forever\facial recogonition\project\photos"
+    DIR = r"C:\Users\vector forever\PROJECTS\Facial recognition\photos"
     test_images = []
     labels = []
     for person in  tqdm(people,desc= 'Main Encoding: ', total= len(people)):   #using tqdm for the progress bar
